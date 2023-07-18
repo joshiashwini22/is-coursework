@@ -1,0 +1,96 @@
+/*CSS for margin of page*/
+* {
+  margin: 0px auto;
+}
+/*Header tag CSS sets background and height*/
+header {
+  height: 125px;
+  background-color: #386fa4;
+}
+/*Header tag CSS sets background, padding and height*/
+footer {
+  height: 95px;
+  background-color: #E6E6FA;
+  padding-bottom: 10px;
+}
+/*CSS for logo*/
+.logo {
+  width: 100%;
+  height: 65px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+/*CSS for nav bar*/
+nav {
+  display: flex;
+  background-color: #E6E6FA;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  float: left;
+}
+/*CSS for central section nav*/
+.navigation {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+/*CSS for list style of central section of nav*/
+.nav-list-style{
+  display: inline;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-right: 10px;
+}
+/*CSS for anchor tag of list style in central section of nav*/
+.nav-list-a-style{
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*CSS for nav items*/
+.nav-item {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+}
+/*CSS for hover effect where text and background color change*/
+.nav-item:hover {
+  background-color: #C69B7B;
+  color: black;
+}
+/*CSS for changing background and text color for active page */
+.nav-item.active {
+  background-color: #565051;
+  color: white;
+}
+/*CSS for side section of nav*/
+.nav-side-section {
+  display: flex;
+  width: 100px;
+}
+/*CSS for alignment of anchor tag of side section nav*/
+.nav-side-section a {
+  align-self: center;
+}
+/*CSS for hover effect where background color changes of nav side section*/
+.nav-side-section a:hover {
+  background-color: #C69B7B;
+}
+/*CSS for footer nav section*/
+.nav-footer {
+  display: flex;
+  width: 100px;
+}
+/*CSS padding in anchor tag of footer nav section*/
+.nav-footer a {
+  padding-right: 15px;
+  }

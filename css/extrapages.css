@@ -1,0 +1,11 @@
+/*CSS for background color of main tag*/
+main{
+  background-color: white;
+  height: 410px;
+}
+/*CSS for h1 tag*/
+h1{
+  text-align: center;
+  color: yellow;
+  background-color: darkblue;
+}

@@ -1,0 +1,86 @@
+/*CSS for top welcome banner*/
+.banner{
+  width: 98.5%;
+  height: 300px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  background-color: darkblue;
+}
+/*image size CSS*/
+.img{
+  width: 100%;
+  height: 100%;
+}
+/*CSS for product section*/
+.section-product{
+  width: 95%; 
+  height: 1600px; 
+  background-color: white; 
+}
+/*row one CSS for products*/
+.row{
+  height: 500px;
+  background-color: transparent;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+/*CSS for area of each product*/
+.product{
+  background-color: white;
+  width: 20%;
+  border: 0px;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+/*CSS for hover effect on the product box*/
+.product img:hover{
+  box-shadow: 10px 10px 20px grey;
+}
+/*CSS for image coverage area in product*/
+.product img{
+  width: 100%;
+  height: 100%;
+}
+/*CSS for anchor tag in product*/
+.product a{
+  text-decoration: none;
+}
+/*CSS for info area in product*/
+.product .info{
+  text-align: start;
+  padding: 10px 10px;
+  background-color: white;
+}
+/*CSS for info cart image area in product*/
+.product .info-cart{
+  float: right;
+}
+/*CSS for span tag in info area of product*/
+.product .info span{
+  font-size: 13px;
+  font-weight: 900;
+  color: #135B68;
+}
+/*CSS for h5 tag in info area of product*/
+.product .info h5{
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+   color: black;     
+}
+/*CSS for h4 tag in info area of product*/
+.product .info h4{
+  font-size: 15px;
+  padding-top: 7px;
+  color: #63B719;     
+}
+/*CSS for cart image in product*/
+.product .cart{
+  width: 30px;
+  float: right;
+}
+/*CSS for height of book cover 
+*/.product .proheight{
+  height: 350px;
+}

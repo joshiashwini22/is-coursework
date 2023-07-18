@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<!-- Starting of Head of Home page -->
+  <head>
+    <!--Meta tags for home page-->
+    <meta name="description" content="Home Page HTML">
+    <meta name="keyword" content="HTML, CSS, JavaScript, Home Page">
+    <meta name="author" content="Ashwini Joshi">
+    <meta http-equiv="refresh" content="3600">
+    <!--Title of the Page-->
+    <title>Mandu Books</title>
+    <!--External CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <!--Internal CSS-->
+    <style type="text/css">
+      /* Container css */
+      .container{
+        position: relative;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 98.5%;
+        height: 400px;
+      }
+      .container-text{
+        position: absolute;
+        left: 8px;
+        top: 10px;
+        text-align: left;
+      }
+      .container-products{
+        position: relative;
+        background-color: yellow;
+        text-align: center;
+        color: black;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 90%;
+        height: 250px;
+      }
+      /*CSS for product row*/
+      .row-home{
+        height: 425px;
+        background-color: transparent;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+      }
+      .section-product-home{
+        width: 95%;  
+        background-color: white; 
+      }
+      /*h1 tag CSS*/
+      h1{
+        font-family: sans-serif,roboto, Comic Sans MS;
+        font-size: 50px;
+        color: black;
+        text-align: center;
+      }
+      /*h5 tag css*/
+      h5{
+        text-align: center;
+        font-family: robot, sans-serif,Comic Sans MS;
+      }
+      /*CSS for product info part*/
+      .product .info-home{
+        text-align: start;
+        padding: 10px 10px;
+        background-color: white;
+      }
+      /*CSS for shop now button*/
+      .btn{
+        border: 2px;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        overflow: hidden;
+        box-shadow: 0px 0px 0px 0px whitesmoke;
+        font-size: 25px;
+      }
+      .btn:hover{
+        /*moves the button to the mentioned axis and adds box shadow*/
+        transform: translate(0, -5px);
+        box-shadow: 0px 6px 25px 0px grey;
+      }
+      .btn:hover:after{
+        transform: translate(0);
+      }
+      /*CSS for book title*/
+      .book-title{
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+<!-- Head section ends here -->
+<!-- Starting of body of Home Page-->
+  <body>
+    <!--Starting of Header Content-->
+    <header>
+      <!-- Diplays the an interactive message using the prompt JS -->
+      <!-- Inline CSS for interactive message area-->
+      <div style="width: 100%; background-color: black; color: white;font-size: 20px; padding-top: 10px; padding-bottom: 10px; text-align: center;">
+        <!-- Text display using id  -->
+        <p id=answer></p>
+      </div>
+      <!-- Respnsive Logo of bookstore opens home page when clicked-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Mandu" width="200px" height="65px" />
+        </a>
+      </div>
+      <nav>
+        <!-- Respnsive nav bar -->
+        <div class="navigation">
+          <!-- Unordered list for navigation to pages-->
+          <ul>
+            <li class="nav-list-style">
+              <a href="index.html" class="nav-item active">Home</a>
+            </li>
+            <li class="nav-list-style">
+              <a href="pages/products.html" class="nav-item">Products</a>
+            </li>
+            <li class="nav-list-style">
+              <a href="pages/blog.html" class="nav-item">Blog</a>
+            </li>
+            <li class="nav-list-style">
+              <a href="pages/research.html" class="nav-item">Research</a>
+            </li>
+            <li class="nav-list-style">
+              <a href="pages/contact.html" class="nav-item">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Side section of nav -->
+        <div class="nav-side-section">
+          <!-- Login nav-->
+          <a href="pages/login.html">
+            <img src="images/user.png" alt="login" width="25px" />
+          </a>
+          <!-- Cart nav-->
+          <a href="pages/cart.html" target="_blank">
+            <img src="images/shopping-cart.png" alt="cart" width="25px" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--Ending of Header Content-->
+
+    <!--Starting of Main Content-->
+    <main> 
+      <!-- Section to keep slider -->
+      <section>
+        <!-- Image slider with welcome and notices-->
+        <div class="slider" id="img" >
+        <img src="images/1.jpg" class="img">
+        </div> 
+      </section>
+      <br>
+      <br>
+      <!-- Section for new release -->
+      <section class="section-product-home">
+        <h1>New Release</h1>
+        <!-- New release product listed. Page redirected to book page when book name is clicked.-->
+        <div class="row-home">
+          <!-- Book1 of New Release -->
+          <div class="product">
+            <a href="pages/book.html">
+              <img src="images/book1.jpg" alt="karnaliblues" class="proheight">
+              <div class="info-home">
+                <h5 class="book-title">Karnali Blues</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Book2 of New Release -->
+          <div class="product">
+            <a href="pages/book.html">
+              <img src="images/book2.jpg" alt="THE END OF THE POINT" class="proheight">
+              <div class="info-home">
+                <h5 class="book-title">THE END OF THE POINT</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Book3 of New Release -->
+          <div class="product">
+            <a href="pages/book.html">
+              <img src="images/book3.jpg" alt="DO GOOD DESIGN" class="proheight">
+              <div class="info-home">
+                <h5 class="book-title">DO GOOD DESIGN</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Book4 of New Release -->
+          <div class="product">
+            <a href="pages/book.html">
+              <img src="images/book4.jpg" alt="SAPIENS" class="proheight">
+              <div class="info-home">
+                <h5 class="book-title">SAPIENS</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section> 
+      <br>
+      <br>
+      <!-- Section for banner -->
+      <section>
+        <div class="container">
+          <img src="images/img1.jpg" class="img">
+          <!-- Text on image -->
+          <div class="container-text">
+            <h1 style="font-size: 60px; margin-left: 20px; color: #0b5394;">MANDU BOOKS</h1>
+            <br>
+            <h2 style="font-size: 30px; margin-left: 20px;"> Read all day everyday!!</h2>
+            <br>
+            <br>
+            <!-- Shop now button opens Product page -->
+            <button style="margin-left: 50px;" class="btn" onclick="location.href ='pages/products.html'">
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Ending of Main Content-->
+
+    <!--Starting of Footer Content-->
+    <footer>
+      <!-- Copyright -->
+      <p
+        style="
+          text-align: center;
+          padding-top: 5px;
+          font-size: 25px;
+          font-family: comic sans;
+        "
+      >
+        &copy; 2022 Copyright | Mandu
+      </p>
+      <br>
+      <!-- Responsive footer nav for social media -->
+      <div class="nav-footer">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/ig.png" alt="instagram" width="35px" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/fb.png" alt="facebook" width="35px" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="images/tw.jpg" alt="twitter" width="35px" />
+          </a>
+        </div>
+    </footer>
+    <!--Ending of Footer Content-->
+    <!-- Internal JS for Image Slider -->
+    <script type="text/javascript">
+      /* Prompt JS */
+      var user = prompt("What is your name?");
+      var answerElement = document.getElementById("answer")
+     
+      // Displays the input data in an interactive format
+      answerElement.innerText = "Hello " + user + " ! " + "Welcome to Mandu Bookstore.";
+
+      /* Sliser JS */
+      var images = ['images/2.jpg', 'images/3.jpg', 'images/1.jpg'];
+
+      var x = 0;
+
+      var imgs = document.getElementById('img');
+      //time interval 5 seconds
+      setInterval(slider, 5000);
+
+
+      function slider() {
+
+        if (x < images.length) {
+          x = x + 1;
+        } else {
+          x = 1;
+        }
+        // Sets HTML content
+        imgs.innerHTML = "<img src=" + images[x - 1] + " class='img'>";
+      }
+    </script>
+  </body>
+<!-- End of Body of Home Page -->
+</html>
